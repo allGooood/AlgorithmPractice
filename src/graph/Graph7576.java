@@ -1,10 +1,11 @@
+package graph;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
 
 
 public class Graph7576 {
@@ -33,12 +34,12 @@ public class Graph7576 {
 //        int width = scanner.nextInt();
 //        int height = scanner.nextInt();
 //        int[][] tomatoBox = new int[height][width];
-//        Queue<Location> queue = new LinkedList<>();
+//        Queue<graph.Location> queue = new LinkedList<>();
 //
 //        for(int i=0; i<height; i++){
 //            for(int j=0; j<width; j++){
 //                tomatoBox[i][j] = scanner.nextInt();
-//                if(tomatoBox[i][j] == 1) queue.add(new Location(j, i));
+//                if(tomatoBox[i][j] == 1) queue.add(new graph.Location(j, i));
 //            }
 //        }
 

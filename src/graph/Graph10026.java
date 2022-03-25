@@ -1,3 +1,5 @@
+package graph;
+
 import java.io.*;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -47,7 +49,7 @@ public class Graph10026 {
                     visited[i][j] = true;
                     queue.add(new Point(i, j, colorPicked));
                     checkQueue(colorBoard, visited);
-                    bfs(colorBoard, visited);
+                    //bfs(colorBoard, visited);
                 }
             }
         }

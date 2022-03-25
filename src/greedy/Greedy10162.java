@@ -1,3 +1,5 @@
+package greedy;
+
 import java.io.*;
 
 public class Greedy10162 {
