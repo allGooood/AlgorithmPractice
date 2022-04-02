@@ -5,6 +5,7 @@ public class ComparatorExample {
         //--자료구조 생성
         Word[] words = new Word[5];
         List<Word> list = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
 
         //--객체 비교를 위해 "comparator"생성
         Comparator<Word> comparator = new Comparator<Word>() {
@@ -21,6 +22,12 @@ public class ComparatorExample {
         //자료구조-리스트
         Collections.sort(list, comparator); //"comparator"사용
         Collections.sort(list, (o1, o2) -> o2.length - o1.length); //람다식사용
+
+        //자료구조-Map
+        //Map Value의 내림차순 정렬
+        //오름차순은 Comparator.reverseOrder()를 삭제
+        Comparator compare = Map.Entry.comparingByValue(Comparator.reverseOrder());
+        map.entrySet().stream().sorted(compare).forEach(System.out::println); //출력
     }
 }
 class Word{
